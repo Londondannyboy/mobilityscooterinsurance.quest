@@ -15,10 +15,9 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Insurance Types</h4>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li><Link href="/class-2-scooter-insurance" className="hover:text-white transition-colors">Class 2 Scooter Insurance</Link></li>
               <li><Link href="/class-3-scooter-insurance" className="hover:text-white transition-colors">Class 3 Scooter Insurance</Link></li>
-              <li><Link href="/electric-wheelchair-insurance" className="hover:text-white transition-colors">Electric Wheelchair Insurance</Link></li>
-              <li><Link href="/powerchair-insurance" className="hover:text-white transition-colors">Powerchair Insurance</Link></li>
+              <li><Link href="/breakdown-cover" className="hover:text-white transition-colors">Breakdown Cover</Link></li>
+              <li><Link href="/compare" className="hover:text-white transition-colors">Compare Insurance</Link></li>
             </ul>
           </div>
           <div>
@@ -34,7 +33,6 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li><Link href="/do-you-need-insurance" className="hover:text-white transition-colors">Do You Need Insurance?</Link></li>
-              <li><Link href="/how-much-does-it-cost" className="hover:text-white transition-colors">How Much Does It Cost?</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>

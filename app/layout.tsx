@@ -63,38 +63,53 @@ export const metadata: Metadata = {
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "InsuranceAgency",
-  "@id": "https://mobilityscooterinsurance.quest/#organization",
+  "@type": "WebSite",
+  "@id": "https://mobilityscooterinsurance.quest/#website",
   name: "Mobility Scooter Insurance UK",
   url: "https://mobilityscooterinsurance.quest",
-  description: "UK comparison service for mobility scooter insurance. Compare quotes from specialist insurers for mobility scooters, powerchairs, and electric wheelchairs.",
+  description: "Compare mobility scooter insurance quotes from UK specialist insurers. Find the best cover for mobility scooters, powerchairs, and electric wheelchairs.",
+  inLanguage: "en-GB",
+  publisher: {
+    "@type": "Organization",
+    name: "Mobility Scooter Insurance UK",
+    url: "https://mobilityscooterinsurance.quest"
+  }
+}
+
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://mobilityscooterinsurance.quest/#service",
+  name: "Mobility Scooter Insurance Comparison",
+  description: "Free comparison service for mobility scooter insurance in the UK. Compare quotes from specialist insurers including Surewise, Age UK, and Mark Bates.",
+  provider: {
+    "@type": "Organization",
+    name: "Mobility Scooter Insurance UK"
+  },
   areaServed: {
     "@type": "Country",
     name: "United Kingdom"
   },
-  serviceType: [
-    "Mobility Scooter Insurance",
-    "Electric Wheelchair Insurance",
-    "Powerchair Insurance",
-    "Disability Equipment Insurance"
-  ]
+  serviceType: "Insurance Comparison",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "GBP",
+    description: "Free mobility scooter insurance quotes"
+  }
 }
 
-const websiteJsonLd = {
+const breadcrumbJsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Mobility Scooter Insurance UK",
-  url: "https://mobilityscooterinsurance.quest",
-  description: "Compare mobility scooter insurance quotes from UK specialist insurers.",
-  inLanguage: "en-GB",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: "https://mobilityscooterinsurance.quest/?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  }
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Mobility Scooter Insurance",
+      item: "https://mobilityscooterinsurance.quest"
+    }
+  ]
 }
 
 export default function RootLayout({
@@ -111,7 +126,11 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
         />
       </head>
       <body className={`${inter.className} antialiased bg-slate-900 text-white`}>

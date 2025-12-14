@@ -20,10 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/do-you-need-insurance`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/class-2-scooter-insurance`,
+      url: `${baseUrl}/breakdown-cover`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -33,30 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/electric-wheelchair-insurance`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/providers/surewise`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/providers/age-uk`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/providers/mark-bates`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
     },
     {
       url: `${baseUrl}/contact`,

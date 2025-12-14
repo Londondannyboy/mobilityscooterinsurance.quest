@@ -26,7 +26,7 @@ const faqJsonLd = {
       name: 'How much does mobility scooter insurance cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Mobility scooter insurance typically costs between £50 and £150 per year, depending on the scooter\'s value, cover level, and your location. That works out to roughly £4-£12 per month.',
+        text: 'Mobility scooter insurance typically costs between £50 and £150 per year, depending on the scooter\'s value, cover level, and your location. That works out to roughly £4-£12 per month. Cheap mobility scooter insurance options start from around £40 per year for basic theft cover.',
       },
     },
     {
@@ -35,6 +35,38 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Comprehensive mobility scooter insurance typically covers theft, accidental damage, fire damage, vandalism, and public liability. Many policies also offer optional breakdown cover and personal accident protection.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between Class 2 and Class 3 mobility scooters?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Class 2 scooters have a maximum speed of 4mph and are for pavement use only - they don\'t need registration. Class 3 scooters can travel up to 8mph on roads, must be registered with DVLA, and need lights, indicators, and a horn.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Will my home insurance cover my mobility scooter?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Some home insurance policies include limited cover for mobility scooters, but it\'s often restricted to theft from your home only. Specialist mobility scooter insurance provides more comprehensive protection including cover away from home, accidental damage, and breakdown.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I insure a second-hand mobility scooter?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, most insurers will cover second-hand mobility scooters. You\'ll need to provide details of the scooter\'s age, value, and condition. Insurance will be based on current market value rather than the original purchase price.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is mobility scooter breakdown cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Mobility scooter breakdown cover provides roadside assistance if your scooter breaks down while you\'re out. It typically includes recovery to your home or a repair centre. Many insurers like Surewise and Age UK offer this as an add-on.',
       },
     },
   ],
@@ -57,14 +89,20 @@ export default function HomePage() {
           </h1>
           <p className="text-lg text-slate-400 mb-2">
             Compare <strong>mobility scooter insurance quotes</strong> from specialist UK insurers.
-            Find the <strong>best mobility scooter insurance</strong> for your needs - comprehensive
-            cover for electric scooters, powerchairs and mobility aids.
+            Find the <strong>best mobility scooter insurance UK</strong> providers and get
+            <strong> insurance for mobility scooters</strong> with comprehensive cover.
           </p>
-          <p className="text-sm text-slate-500">
-            Get a <strong>mobility scooter insurance quote</strong> in minutes.
-            <strong> Cheap mobility scooter insurance</strong> options available with theft,
-            accidental damage &amp; breakdown cover.
+          <p className="text-sm text-slate-500 mb-4">
+            <strong>Cheap mobility scooter insurance</strong> from £4/month. Whether you need
+            <strong> class 3 mobility scooter insurance</strong>, breakdown cover, or third party
+            liability - <strong>compare mobility scooter insurance</strong> and save.
           </p>
+          <div className="flex flex-wrap justify-center gap-2 text-xs text-slate-500">
+            <span className="px-3 py-1 bg-slate-800/50 rounded-full">Theft Cover</span>
+            <span className="px-3 py-1 bg-slate-800/50 rounded-full">Accidental Damage</span>
+            <span className="px-3 py-1 bg-slate-800/50 rounded-full">Breakdown Cover</span>
+            <span className="px-3 py-1 bg-slate-800/50 rounded-full">Public Liability</span>
+          </div>
         </div>
       </section>
 
@@ -416,7 +454,59 @@ export default function HomePage() {
                 rather than the original purchase price.
               </p>
             </details>
+
+            <details className="bg-slate-800/50 rounded-xl border border-slate-700/50 p-6 group">
+              <summary className="text-lg font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                What is mobility scooter breakdown cover?
+                <svg className="w-5 h-5 text-blue-400 transform group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
+                </svg>
+              </summary>
+              <p className="mt-4 text-slate-400">
+                <strong>Mobility scooter breakdown cover</strong> provides 24/7 roadside assistance
+                if your scooter breaks down while you&apos;re out. It typically includes recovery
+                to your home or a repair centre. Providers like Surewise and Age UK offer
+                <strong> mobility scooter insurance and breakdown cover</strong> as a combined package,
+                which is often better value than buying separately.
+              </p>
+            </details>
+
+            <details className="bg-slate-800/50 rounded-xl border border-slate-700/50 p-6 group">
+              <summary className="text-lg font-semibold text-white cursor-pointer list-none flex justify-between items-center">
+                What is mobility scooter third party insurance?
+                <svg className="w-5 h-5 text-blue-400 transform group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
+                </svg>
+              </summary>
+              <p className="mt-4 text-slate-400">
+                <strong>Mobility scooter third party insurance</strong> (also called public liability)
+                covers you if your scooter causes injury to someone or damages their property.
+                While not legally required, <strong>mobility scooter liability insurance</strong> provides
+                peace of mind when using your scooter in public places. Most comprehensive
+                policies include this as standard.
+              </p>
+            </details>
           </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-600/20 to-blue-500/20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">
+            Get Your Mobility Scooter Insurance Quote Today
+          </h2>
+          <p className="text-slate-400 mb-6">
+            <strong>Insurance for mobility scooter UK</strong> owners has never been easier.
+            Compare quotes from the <strong>cheapest mobility scooter insurance</strong> providers
+            and find the right cover for your needs.
+          </p>
+          <a
+            href="#calculator"
+            className="inline-block px-8 py-4 bg-blue-500 text-white font-semibold rounded-xl hover:bg-blue-600 transition-colors"
+          >
+            Compare Quotes Now
+          </a>
         </div>
       </section>
     </div>
